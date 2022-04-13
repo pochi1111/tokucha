@@ -11,7 +11,7 @@ app.use(session({secret:"my_secret_key",resave:false,saveUninitialized:false,}))
 const connection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: 'kuni7921',
+  password: 'パスワードなんで見せられません',
   database: 'tokucha'
 });
 
@@ -70,7 +70,7 @@ app.listen(3000);
 //mysql --user=root --password
 //net stop mysql57
 //exit;
-//IP =>  192.168.11.4
+//IP => ー－－－－－－－－－－－－－－－－－－
 
 //maincommentクエリのカラム
 //id,comment,user
