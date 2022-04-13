@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home.css">
+    <title>匿茶部屋</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+    </script>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"
+/>
+</head>
+<body>
+    <header>
+        <p id="title">匿茶部屋</p><a href="/login" class="login-text">ログイン</a>
+    </header>
+    <main>
+        <ul>
+            <div id="comment-title-box">
+                <h1 id="comment-title">メイン鯖</h1>
+            </div>
+            <a href="/" class="reload">再読み込み</a>
+            <!--一覧表-->
+            <% commentdata.forEach((commentdata) => { %>
+            <li class="comment-box">
+                <div class="comment-user">>><span class="id"><%= commentdata.id %></span><span class="username"><%=  commentdata.user %></span></div>
+                <div class="comment"><%= commentdata.comment %></div>
+            </li>
+            <% }) %>
+            <!--ここまで-->
+        </ul>
+        <form action="/check" method="post">
+            <h1 id="up-title">コメントを送信</h1>
+            <input type="text" name="upuser" id="up-user"><br>
+            <textarea id="up-comment" name="comment"></textarea><br>
+            <input type="submit" value="送信する" id="up-submit">
+        </form>
+    </main>
+</body>
+<style>
+</style>
+</html>
