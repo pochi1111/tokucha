@@ -1,0 +1,82 @@
+header{
+    height: 50px;
+    width: 100%;
+    background-color: #4682b4;
+    display: flex;
+}   
+#title{
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 30px;
+    color: white;
+    float: left;
+    text-align: left;
+}
+.login-text{
+    position: absolute;
+    color: white;
+    padding-top: 15px;
+    right: 30px;
+    text-align: right;
+    font-size: 20px;
+}
+.login-text:hover{
+    border-bottom: white solid 2.5px;
+}
+#comment-title{
+    color: black;
+    width: 80%;
+    padding-left: 30px;
+    font-size: 25px;
+    padding-top: 20px;
+}
+#comment-title-box{
+    width: 80%;
+    height: 65px;
+    border-bottom: black solid 1px;
+}
+main{
+    margin-left: 30px;
+}
+.comment-box{
+    margin-top: 30px;
+    width: 70%;
+    border-bottom: black solid 1px;
+}
+.comment-user{
+    font-size: 20px;
+}
+.comment{
+    font-size: 15px;
+    margin-top: 15px;
+    padding-bottom: 10px;
+}
+.id{
+    padding-right: 10px;
+}
+#up-title{
+    font-size: 20px;
+    padding-top: 20px;
+}
+#up-comment{
+    margin-top: 10px;
+    height: 100px;
+    width: 80%;
+}
+#up-user{
+    margin-top: 10px;
+    width: 40%;
+}
+#up-submit{
+    padding: 2.5px;
+    margin-top: 10px;
+}
+#up-submit,#up-comment,#up-user{
+    border: black solid 1.5px;
+}
+.reload{
+    font-size:20px;
+    padding-top: 20px;
+    color: rgb(0, 89, 255);
+    border-bottom: rgb(0, 89, 255) solid 1.5px;
+}
